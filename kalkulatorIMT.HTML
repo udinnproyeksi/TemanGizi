@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>PEduli Gizi</title>
+</head>
+
+
+
+<body>
+
+    <nav>
+        <div class="nav__logo">Teman Gizi</div>
+        <ul class="nav__links">
+            <li class="nav-item"><a class="nav-link" href="MDK.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="kalkulatorIMT.HTML"><b>Kalkulator IMT</b></a></li>
+            <li class="nav-item"><a class="nav-link" href="index (2).html">INFO GIZI </a></li>
+
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="box">
+            <h1>BMI Calculator</h1>
+            <div class="content">
+
+
+                <div class="input">
+                    <label for="height">Age</label>
+                    <input type="text" class="text-input" id="age" autocomplete="off" required/>
+                </div>
+
+                <div class="gender">
+
+                    <label class="container">
+                    <input type="radio" name="radio" id="m"><p class="text">Male</p>
+                    <span class="checkmark"></span>
+                  </label>
+
+
+                    <label class="container">
+                    <input type="radio" name="radio" id="f" ><p class="text">Female</p>
+                      <span class="checkmark"></span>
+                    </label>
+
+                </div>
+
+                <div class="containerHW">
+                    <div class="inputH">
+                        <label for="height">Height(cm)</label>
+                        <input type="number" id="height" required>
+                    </div>
+
+                    <div class="inputW">
+                        <label for="weight">Weight(kg)</label>
+                        <input type="number" id="weight" required>
+                    </div>
+                </div>
+
+                <button class="calculate" id="submit" onclick="calculate();">Calculate BMI</button>
+            </div>
+            <div class="result">
+                <p>Your BMI is</p>
+                <div id="result">00.00</div>
+                <p class="comment"></p>
+            </div>
+            <div class="footer"><a class="footer-text" target="_blank" href="#"></a></div>
+
+
+
+        </div>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <br>
+
+
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <h3>Peduli Gizi</h3>
+            </div>
+            <div class="footer__col">
+            </div>
+        </div>
+        <div class="footer__bar">
+            Copyright © 2023 Gizi teknologi
+        </div>
+    </footer>
+
+</body>
+
+</html>
